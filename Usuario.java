@@ -19,9 +19,7 @@ public class Usuario extends Persona {
 
     //Metodo para disminuir el número de libros prestados
     public  void disminuirLibrosPrestados() {
-        if (librosPrestados > 0) {
-            librosPrestados--;
-        }
+        librosPrestados--;
     }
 
     // Se implementa metodo mostrarDatos en Usuario

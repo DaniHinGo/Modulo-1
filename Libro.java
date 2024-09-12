@@ -17,24 +17,12 @@ public class Libro {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
     public String getAutor() {
         return autor;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
     public String getIsbn() {
         return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
     }
 
     //Metodo get para disponible no es necesario el set ya que el control es interno
@@ -47,7 +35,6 @@ public class Libro {
     public void prestar() {
         if (disponible) {
             disponible = false;
-            System.out.println("El libro '" + titulo + "' ha sido prestado.");
         } else {
             System.out.println("El libro '" + titulo +"' no está disponible para prestar.");
         }
@@ -57,7 +44,6 @@ public class Libro {
     public void devolver() {
         if (!disponible) {
             disponible = true;
-            System.out.println("El libro '" + titulo + "' ha sido devuelto.");
         } else {
             System.out.println("El libro '" + titulo + "' Está disponible");
         }
